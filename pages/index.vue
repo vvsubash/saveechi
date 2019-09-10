@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="SignIn">Signin</button>
-    {{ db }}
+    <button @click="SignOut">SignOut</button>
   </div>
 </template>
 
@@ -13,15 +13,20 @@ export default {
   methods: {
     SignIn() {
       const provider = new firebase.auth.GoogleAuthProvider()
-      provider.addScope('https://www.googleapis.com/auth/contacts.readonly')
+      provider.addScope('https://www.googleapis.com/auth/calendar')
       firebase
         .auth()
         .signInWithPopup(provider)
         .then(function(result) {
           // This gives you a Google Access Token. You can use it to access the Google API.
-          // var token = result.credential.accessToken
+          const token = result.credential.accessToken
+          // eslint-disable-next-line
+          console.log(token)
+          alert(token)
           // The signed-in user info.
-          // var user = result.user
+          const user = result.user
+          // eslint-disable-next-line
+          console.log(user)
           // ...
         })
         .catch(function(error) {
@@ -35,6 +40,15 @@ export default {
           // // The firebase.auth.AuthCredential type that was used.
           // const credential = error.credential
           // ...
+        })
+    },
+    SignOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          // eslint-disable-next-line
+          console.log('signed out')
         })
     }
   }
