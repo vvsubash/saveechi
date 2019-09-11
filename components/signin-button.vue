@@ -1,7 +1,10 @@
 <template>
-  <button class="p-2 rounded-lg border bg-orange-500" @click="signin">
-    Sign In
-  </button>
+  <div>
+    <button class="p-2 rounded-lg border bg-orange-500" @click="signin">
+      Sign In
+    </button>
+    {{ token }}
+  </div>
 </template>
 
 <script>
@@ -9,9 +12,13 @@ import firebase from 'firebase'
 // eslint-disable-next-line
 import db from '~/plugins/firestore.js'
 export default {
+  data() {
+    return {
+      token: null
+    }
+  },
   methods: {
-    // eslint-disable-next-line
-    signin: function() {
+    signin() {
       const provider = new firebase.auth.GoogleAuthProvider()
       provider.addScope('https://www.googleapis.com/auth/calendar')
       firebase
@@ -27,7 +34,6 @@ export default {
           const user = result.user
           // eslint-disable-next-line
           console.log(user)
-          // ...
         })
         .catch(function(error) {
           // eslint-disable-next-line
