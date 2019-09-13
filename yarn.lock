@@ -752,10 +752,10 @@
   dependencies:
     "@firebase/app-types" "0.x"
 
-"@firebase/database@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.5.2.tgz#9f480c64f7a16569ae8cf18ed82b22acf0ea0885"
-  integrity sha512-LnXKRE1AmjlS+iRF7j8vx+Ni8x85CmLP5u5Pw5rDKhKLn2eTR1tJKD937mUeeGEtDHwR1rrrkLYOqRR2cSG3hQ==
+"@firebase/database@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.5.3.tgz#e731de97f2d12490df1614a86b993e9ab86ed7cb"
+  integrity sha512-TFjQ/M0T4jO24jAMU5cZAHNk3ndNfeNtGKe5PL4o/YrGYJHg3XaE2LKzU/vFrXUFLnLxqbETzXjFa4hTA6cDUg==
   dependencies:
     "@firebase/database-types" "0.4.3"
     "@firebase/logger" "0.1.24"
@@ -768,10 +768,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/firestore-types/-/firestore-types-1.5.0.tgz#f05700220f882773ca01e818bf10b1dc456ee5be"
   integrity sha512-VhRHNbEbak+R2iK8e1ir2Lec7eaHMZpGTRy6LMtzATYthlkwNHF9tO8JU8l6d1/kYkI4+DWzX++i3HhTziHEWA==
 
-"@firebase/firestore@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-1.5.1.tgz#b494662a68d208d678449460f73437a378fe6167"
-  integrity sha512-W3XvAZQ1gwn6Sl1bJMUxzkF3qKIzyBKw8cQyGuYwo7ml6ME63tGvSScmEGjzFimvynrFhmSRJ16DPSVFe9LXmw==
+"@firebase/firestore@1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-1.5.2.tgz#798c6ef541ee982d473d58d0df440bc0381c5f80"
+  integrity sha512-CPYLvkGZBKE47oQC9a0q13UMVRj3LvnSbB1nOerktE3CGRHKy44LxDumamN8Kj067hV/80mKK9FdbeUufwO/Rg==
   dependencies:
     "@firebase/firestore-types" "1.5.0"
     "@firebase/logger" "0.1.24"
@@ -1309,16 +1309,15 @@
     eslint-loader "^2.2.1"
 
 "@nuxtjs/pwa@^3.0.0-0":
-  version "3.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.0.0-beta.17.tgz#00a3ad5fa8ae39ac94e0f6eaa7058315b4a1c036"
-  integrity sha512-WSAyXGJpSg3Zgd5Seqzzk44lnuOQF14KRCcUZeW8HDktJnaN0vIqHUOgrvUhuF7qhRJ1OxypybYVOG+EVI1NPQ==
+  version "3.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.0.0-beta.19.tgz#4685c8137a5b588126b3ee4d469f6806423f958f"
+  integrity sha512-5c7CB2qrrlpu7BmJeWX9GN//uK1SiEzBbT+ykH11ZfUxQyXiO3QTm1f6tTOnG/P5v4kRIGYdBr0wmRbA/Hv1cw==
   dependencies:
     defu "^0.0.3"
     execa "^1.0.0"
     fs-extra "^8.1.0"
     hasha "^5.0.0"
-    jimp-compact "^0.6.8"
-    lodash.template "^4.5.0"
+    jimp-compact "^0.8.0"
     workbox-cdn "^4.3.1"
 
 "@nuxtjs/tailwindcss@^1.0.0":
@@ -1477,14 +1476,14 @@
   integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
 
 "@types/node@*":
-  version "12.7.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.4.tgz#64db61e0359eb5a8d99b55e05c729f130a678b04"
-  integrity sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
+  version "12.7.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.5.tgz#e19436e7f8e9b4601005d73673b6dc4784ffcc2f"
+  integrity sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
 
 "@types/node@^10.1.0":
-  version "10.14.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.17.tgz#b96d4dd3e427382482848948041d3754d40fd5ce"
-  integrity sha512-p/sGgiPaathCfOtqu2fx5Mu1bcjuP8ALFg4xpGgNkcin7LwRyzUKniEHBKdcE1RPsenq5JVPIpMTJSygLboygQ==
+  version "10.14.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.18.tgz#b7d45fc950e6ffd7edc685e890d13aa7b8535dce"
+  integrity sha512-ryO3Q3++yZC/+b8j8BdKd/dn9JlzlHBPdm80656xwYUdmPkpTGTjkAdt6BByiNupGPE8w0FhBgvYy/fX9hRNGQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4465,15 +4464,15 @@ find-up@^4.0.0:
     path-exists "^4.0.0"
 
 firebase@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-6.6.0.tgz#4890fa40ef4757dec9cb8524b17a0ed19ceb894e"
-  integrity sha512-n6SiV0z7UF0cn2t/D+P0xQvnrwVXW41lRb1qw5GYgqc53FltIzPuFgv8yTx3q4Nt/vrFluyDqIbRnrAHGcPwjg==
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/firebase/-/firebase-6.6.1.tgz#758beaba5e1729062279b2b288969df2af6f94f8"
+  integrity sha512-iXbHPIBRt04xYSjWffnARqZbc3vUc0RTnOHsMtAqaT7pqDWicaghEwj2WbCJ0+JLAiKnLNK7fTjW73zfKQSSoQ==
   dependencies:
     "@firebase/app" "0.4.16"
     "@firebase/app-types" "0.4.3"
     "@firebase/auth" "0.12.0"
-    "@firebase/database" "0.5.2"
-    "@firebase/firestore" "1.5.1"
+    "@firebase/database" "0.5.3"
+    "@firebase/firestore" "1.5.2"
     "@firebase/functions" "0.4.17"
     "@firebase/installations" "0.2.6"
     "@firebase/messaging" "0.4.10"
@@ -5980,10 +5979,10 @@ jest@^24.1.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
-jimp-compact@^0.6.8:
-  version "0.6.8"
-  resolved "https://registry.yarnpkg.com/jimp-compact/-/jimp-compact-0.6.8.tgz#e915446206c60a65df8bb413902fe6b42bef44ef"
-  integrity sha512-K3xHMUYkzrX3Gfu/WKrA75RlD9BtwJ0bQqSO4EDVqXNmUQQLrB4N2mAfTz3L2P2vadTfhjBWt4JLOuTHz/FyWg==
+jimp-compact@^0.8.0:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/jimp-compact/-/jimp-compact-0.8.1.tgz#57e69cc117d99b6aed6eb2ce132b60093633dfff"
+  integrity sha512-m9D/K5ODBCw2J7heEjqHFemIjXnmE7RFBmi6k179ifqsELRyuvLFvHmNI68bMlU8yGtFP952ynbFvXwpS1JtZw==
 
 js-levenshtein@^1.1.3:
   version "1.1.6"
@@ -6716,17 +6715,17 @@ minimist@~0.0.1:
   integrity sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
 
 minipass@^2.2.1, minipass@^2.3.5:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.5.0.tgz#dddb1d001976978158a05badfcbef4a771612857"
-  integrity sha512-9FwMVYhn6ERvMR8XFdOavRz4QK/VJV8elU1x50vYexf9lslDcWe/f4HBRxCPd185ekRSjU6CfYyJCECa/CQy7Q==
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.5.1.tgz#cf435a9bf9408796ca3a3525a8b851464279c9b8"
+  integrity sha512-dmpSnLJtNQioZFI5HfQ55Ad0DzzsMAb+HfokwRTNXwEQjepbTkl5mtIlSVxGIkOkxlpX7wIn5ET/oAd9fZ/Y/Q==
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
 minizlib@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.2.1.tgz#dd27ea6136243c7c880684e8672bb3a45fd9b614"
-  integrity sha512-7+4oTUOWKg7AuL3vloEWekXY2/D20cevzsrNT2kGWm+39J9hGTCBv8VI5Pm5lXZ/o3/mdR4f8rflAPhnQb8mPA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.2.2.tgz#6f0ccc82fa53e1bf2ff145f220d2da9fa6e3a166"
+  integrity sha512-hR3At21uSrsjjDTWrbu0IMLTpnkpv8IIMFDFaoz43Tmu4LkmAXfH44vNNzpTnf+OAQQCHrb91y/wc2J4x5XgSQ==
   dependencies:
     minipass "^2.2.1"
 

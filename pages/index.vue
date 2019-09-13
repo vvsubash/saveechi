@@ -1,12 +1,16 @@
 <template>
   <div>
     <signInButton />
-    <button @click="SignOut">SignOut</button>
+    <br />
+    <button @click="signoutog">SignOut</button>
+    <p v-if="this.$store.state.user != null">
+      {{ this.$store.state.user }}
+    </p>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase'
+// import firebase from 'firebase'
 import signInButton from '~/components/signin-button'
 // eslint-disable-next-line
 import db from '~/plugins/firestore.js'
@@ -14,15 +18,17 @@ export default {
   components: {
     signInButton
   },
+
   methods: {
-    SignOut() {
-      firebase
-        .auth()
-        .signOut()
-        .then(() => {
-          // eslint-disable-next-line
-          console.log('signed out')
-        })
+    signoutog() {
+      this.$store.dispatch('SignOut')
+      // firebase
+      //   .auth()
+      //   .signOut()
+      //   .then(() => {
+      //     // eslint-disable-next-line
+      //     console.log('signed out')
+      //   })
     }
   }
 }
