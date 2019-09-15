@@ -18,3 +18,4 @@ exports.addUserToDatabase = functions.auth
 // exports.helloWorld = functions.https.onRequest((request, response) => {
 //  response.send("Hello from Firebase!");
 // });
+// https://firebase.google.com/docs/functions/locations

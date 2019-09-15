@@ -6,6 +6,9 @@
     <p v-if="this.$store.state.user != null">
       {{ this.$store.state.user }}
     </p>
+    <nuxt-link to="/about"
+      >About (internal link that belongs to the Nuxt App)</nuxt-link
+    >
   </div>
 </template>
 
