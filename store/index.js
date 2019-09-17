@@ -51,6 +51,7 @@ export const actions = {
   SignOut({ commit }) {
     firebase
       .auth()
+      .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
       .signOut()
       .then(() => {
         // eslint-disable-next-line

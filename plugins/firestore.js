@@ -20,7 +20,7 @@ const firebaseApp = firebase.initializeApp({
   scopes: ['email', 'profile']
 })
 
-const db = firebaseApp.firestore()
+export const db = firebaseApp.firestore()
 
 firebase
   .firestore()
@@ -37,4 +37,4 @@ firebase
     }
   })
 
-export default db
+// export default db
