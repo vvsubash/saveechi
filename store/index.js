@@ -25,15 +25,11 @@ export const actions = {
       .signInWithPopup(provider)
       .then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
-        const token = result.credential.accessToken
-        // eslint-disable-next-line
-        console.log(token)
-        alert(token)
         // The signed-in user info.
         const user = result.user
         commit('setUser', user.uid)
         // eslint-disable-next-line
-        // console.log(user)
+        console.log(result)
       })
       .catch(function(error) {
         // eslint-disable-next-line
@@ -51,7 +47,6 @@ export const actions = {
   SignOut({ commit }) {
     firebase
       .auth()
-      .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
       .signOut()
       .then(() => {
         // eslint-disable-next-line
