@@ -21,8 +21,6 @@ import { db } from '~/plugins/firestore.js'
 // eslint-disable-next-line
 import firebase from 'firebase'
 import signInButton from '~/components/signin-button'
-// eslint-disable-next-line
-console.log(`hello ${firebase.auth().currentUser}`)
 export default {
   components: {
     signInButton
