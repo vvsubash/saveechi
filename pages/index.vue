@@ -32,7 +32,9 @@ export default {
   firestore() {
     const uid = this.$store.state.user
 
-    return { documents: db.collection(`users/${uid}/cows`) }
+    return {
+      documents: db.collection(`users/${uid}/cows`)
+    }
   },
   methods: {
     signoutog() {

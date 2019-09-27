@@ -9,8 +9,7 @@
 <script>
 // eslint-disable-next-line
 import { mapState } from 'vuex'
-// import firebase from 'firebase'
-// import db from '~/plugins/firestore.js'
+
 export default {
   data() {
     return {
