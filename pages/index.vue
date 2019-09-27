@@ -17,9 +17,7 @@
 </template>
 
 <script>
-import { db } from '~/plugins/firestore.js'
-// eslint-disable-next-line
-import firebase from 'firebase'
+import db from '~/plugins/firestore.js'
 import signInButton from '~/components/signin-button'
 export default {
   components: {
@@ -31,8 +29,10 @@ export default {
     }
   },
 
-  firestore: {
-    documents: db.collection('users')
+  firestore() {
+    const uid = this.$store.state.user
+
+    return { documents: db.collection(`users/${uid}/cows`) }
   },
   methods: {
     signoutog() {
