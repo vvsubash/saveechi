@@ -1,15 +1,21 @@
-account_id = "9e3485a8eec4b4551fa8cd28376bec5c"
 name = "saveechi"
+account_id = "9e3485a8eec4b4551fa8cd28376bec5c"
 type = "webpack"
-route = ""
 workers_dev = true
+
 
 [site]
 bucket = "./dist"
-entry-point = "workers-site"
+entry-point = "saveechi"
+
+
+
 
 
 [env.production]
 # The ID of your domain you're deploying to
+name = "savee"
 zone_id = "3a1ff58115eea2b8722f62c2e3702d58"
+account_id = "9e3485a8eec4b4551fa8cd28376bec5c"
+route = "https://subash.rocks/"
 
