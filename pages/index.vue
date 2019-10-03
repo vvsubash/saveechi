@@ -9,7 +9,9 @@
       <!-- {{ firebase.auth().currentUser.uid }} -->
     </p>
 
-    <nuxt-link to="/about">About</nuxt-link>
+    <nuxt-link to="/about"
+      >About</nuxt-link
+    >
     {{ documents }}
   </div>
 </template>
