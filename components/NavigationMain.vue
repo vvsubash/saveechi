@@ -4,7 +4,7 @@
   >
     <a href="/" class="block text-left">
       <img
-        src="https://stitches.hyperyolo.com/images/logo.png"
+        src=""
         class="h-10 sm:h-10 rounded-full"
         alt="logo"
       />
