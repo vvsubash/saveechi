@@ -8,9 +8,9 @@
       <nuxt-link :to="'/' + this.$store.state.user">LinkTitle</nuxt-link>
       <!-- {{ firebase.auth().currentUser.uid }} -->
     </p>
-
     <nuxt-link to="/about">About</nuxt-link>
     {{ documents }}
+    {{ this.$store.state.animals }}
   </div>
 </template>
 
@@ -33,6 +33,9 @@ export default {
     return {
       documents: db.collection(`users/${uid}/cows`)
     }
+  },
+  created() {
+    this.$store.dispatch('initStore')
   },
   methods: {
     signoutog() {
