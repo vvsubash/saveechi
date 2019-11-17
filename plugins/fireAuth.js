@@ -1,6 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
-export const auth = firebase.auth()
+const auth = firebase.auth()
 
 export default (context) => {
   const { store } = context
@@ -14,4 +14,3 @@ export default (context) => {
     })
   })
 }
-export default auth

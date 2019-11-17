@@ -1,6 +1,6 @@
+import firebase from 'firebase'
 import { vuexfireMutations, firestoreAction } from 'vuexfire'
 import db from '~/plugins/firestore'
-import auth from '~/plugins/fireAuth'
 export const state = () => ({
   user: null,
   animals: []
@@ -21,9 +21,10 @@ export const mutations = {
 
 export const actions = {
   signInWithGoogle({ commit }) {
-    const provider = new auth.GoogleAuthProvider()
+    const provider = new firebase.auth.GoogleAuthProvider()
     provider.addScope('https://www.googleapis.com/auth/calendar')
-    auth
+    firebase
+      .auth()
       .signInWithPopup(provider)
       .then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -47,10 +48,13 @@ export const actions = {
       })
   },
   SignOut({ commit }) {
-    auth.signOut().then(() => {
-      // eslint-disable-next-line
-      console.log('signed out')
-    })
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        // eslint-disable-next-line
+        console.log('signed out')
+      })
     commit('setUser', null)
   },
   initStore: firestoreAction(({ bindFirestoreRef }) => {
