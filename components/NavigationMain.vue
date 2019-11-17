@@ -3,11 +3,7 @@
     class="font-sans bg-white text-center flex flex-wrap justify-between my-4 mx-auto container overflow-hidden"
   >
     <a href="/" class="block text-left">
-      <img
-        src=""
-        class="h-10 sm:h-10 rounded-full"
-        alt="logo"
-      />
+      <img src="" class="h-10 sm:h-10 rounded-full" alt="logo" />
     </a>
     <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
       <li>
