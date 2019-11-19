@@ -21,7 +21,7 @@ export default {
   data() {
     return {}
   },
-  updated() {
+  created() {
     this.$store.dispatch('initStore')
   },
   methods: {
