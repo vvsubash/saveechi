@@ -1,31 +1,6 @@
 <template>
   <div>
-    <section
-      class="antialiased font-sans w-full bg-gray-300 text-left text-black py-8"
-    >
-      <div class="container mx-auto max-w-xl py-8 font-normal leading-normal">
-        <h3 class="text-2xl">Grow Your Business</h3>
-        <p class="">
-          Build high performing teams, establish design practices, mentor and
-          grow the next generation of great designers, and design interfaces and
-          experiences.
-        </p>
-        <div class="max-w-sm mt-4 sm:flex">
-          <input
-            type="email"
-            class="block w-full focus:outline-0 bg-white py-3 px-6 mb-2 sm:mb-0"
-            name="email"
-            placeholder="Enter your email"
-            required=""
-          />
-          <button
-            class="uppercase text-sm text-white focus:outline-0 w-full sm:w-auto bg-black hover:bg-gray-900 focus:bg-gray-300 tracking-wide px-6"
-          >
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </section>
+    <hero-section />
     <section class="font-sans container m-auto text-center py-8">
       <label
         for="tagline"
@@ -81,98 +56,7 @@
         </div>
       </div>
     </section>
-    <section
-      class="font-sans container m-auto max-w-xl flex flex-col flex-wrap sm:flex-row justify-center"
-    >
-      <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-        <label for="" class="uppercase tracking-loose font-bold text-sm"
-          >Basic Plan</label
-        >
-        <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">
-          $29<span class="text-gray-700 font-light text-xs">/mo</span>
-        </h1>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">5</strong>Projects
-        </p>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">20</strong>Images
-        </p>
-        <p class="mt-2 mb-6 text-gray-700">
-          <strong class="text-black pr-2">9/5</strong>Support
-        </p>
-        <button
-          class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent"
-        >
-          Buy Now
-        </button>
-      </div>
-      <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-        <label for="" class="uppercase tracking-loose font-bold text-sm"
-          >Team Plan</label
-        >
-        <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">
-          $59<span class="text-gray-700 font-light text-xs">/mo</span>
-        </h1>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">10</strong>Projects
-        </p>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">40</strong>Images
-        </p>
-        <p class="mt-2 mb-6 text-gray-700">
-          <strong class="text-black pr-2">12/7</strong>Support
-        </p>
-        <button
-          class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent"
-        >
-          Buy Now
-        </button>
-      </div>
-      <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-        <label for="" class="uppercase tracking-loose font-bold text-sm"
-          >Corporate Plan</label
-        >
-        <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">
-          $79<span class="text-gray-700 font-light text-xs">/mo</span>
-        </h1>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">Unlimited</strong>Projects
-        </p>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">Unlimited</strong>Images
-        </p>
-        <p class="mt-2 mb-6 text-gray-700">
-          <strong class="text-black pr-2">24/7</strong>Support
-        </p>
-        <button
-          class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent"
-        >
-          Buy Now
-        </button>
-      </div>
-      <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-        <label for="" class="uppercase tracking-loose font-bold text-sm"
-          >Enterprise Plan</label
-        >
-        <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">
-          $199<span class="text-gray-700 font-light text-xs">/mo</span>
-        </h1>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">Unlimited</strong>Projects
-        </p>
-        <p class="my-2 text-gray-700">
-          <strong class="text-black pr-2">Unlimited</strong>Images
-        </p>
-        <p class="mt-2 mb-6 text-gray-700">
-          <strong class="text-black pr-2">24/7</strong>Support
-        </p>
-        <button
-          class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent"
-        >
-          Buy Now
-        </button>
-      </div>
-    </section>
+    <pricing-table />
     <section class="bg-white py-4 font-sans">
       <div
         class="container max-w-xl m-auto flex flex-wrap md:flex-no-wrap items-center justify-between"
@@ -231,57 +115,19 @@
         </div>
       </div>
     </section>
-    <footer class="font-sans bg-black text-white py-8 px-4">
-      <div
-        class="mx-auto max-w-xl overflow-hidden flex justify-between items-center"
-      >
-        <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
-          <li>
-            <a href="/" class="block mr-4 w-32">
-              <img
-                src="https://stitches.hyperyolo.com/images/logo-white.png"
-                class=""
-                alt="logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline"
-              >Product</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline"
-              >Company</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline"
-              >FAQs</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline"
-              >About Us</a
-            >
-          </li>
-        </ul>
-        <p class="inline-block py-2 px-3 text-gray-700 text-xs">
-          ©2019 Hyperyolo. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <main-footer />
   </div>
 </template>
 
 <script>
-export default {}
+import HeroSection from '~/components/HeroSection.vue'
+import MainFooter from '~/components/MainFooter.vue'
+import PricingTable from '~/components/PricingTable.vue'
+export default {
+  components: {
+    HeroSection,
+    MainFooter,
+    PricingTable
+  }
+}
 </script>
